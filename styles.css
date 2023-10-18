@@ -1,0 +1,200 @@
+/* Estilos generales */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1e90ff,
+    #00bfff
+  ); 
+  background-size: 200% 200%;
+  animation: gradientAnimation 30s linear infinite;
+  display: flex;
+  flex-direction: column;
+  color: white; 
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Estilos del menú hamburguesa en pantallas pequeñas */
+/* Estilos de la Navbar */
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.menu-icon,
+.menu {
+  display: inline;
+}
+
+#menu-toggle:checked + .menu-icon,
+#menu-toggle:checked + .menu {
+  display: block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  display: inline;
+  padding: 10px 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos de la Sección de Portada o Hero */
+.hero {
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: #ff1493; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos de la Sección de About o Beneficios */
+.benefits {
+  background: #1e90ff; 
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.benefit-item {
+  margin: 20px;
+  background: #ff1493; 
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.benefit-item i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffc0cb; 
+}
+
+.benefit-item p {
+  font-size: 18px;
+}
+
+.benefit-item:hover {
+  transform: scale(1.05); 
+  background: #ff69b4; 
+}
+
+/* Estilos de la Sección de Cards con Iconos */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.product-card {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  background: #1e90ff; 
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+}
+
+.product-icon {
+  font-size: 48px;
+  color: #ff1493; 
+}
+
+/* Estilos de la Sección de Contacto */
+.contact {
+  background: linear-gradient(
+    135deg,
+    #1e90ff,
+    #00bfff
+  ); 
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Estilos del Footer */
+.footer {
+  background: linear-gradient(
+    135deg,
+    #1e90ff,
+    #00bfff
+  );
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.icono-red-social {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
